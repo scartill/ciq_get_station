@@ -1,0 +1,608 @@
+{
+    "data": {
+        "id": "stop__10192834",
+        "name": "Парк Красная Пресня",
+        "coordinates": [
+            37.553323621,
+            55.752016755
+        ],
+        "currentTime": 1585163145009,
+        "tzOffset": 10800,
+        "type": "urban",
+        "region": {
+            "id": 213,
+            "type": 6,
+            "parent_id": 1,
+            "capital_id": 0,
+            "geo_parent_id": 0,
+            "city_id": 213,
+            "name": "Москва",
+            "native_name": "",
+            "iso_name": "RU MOW",
+            "is_main": true,
+            "en_name": "Moscow",
+            "short_en_name": "MSK",
+            "phone_code": "495 499",
+            "phone_code_old": "095",
+            "zip_code": "",
+            "population": 12506468,
+            "synonyms": "Moskau, Moskva",
+            "latitude": 55.753215,
+            "longitude": 37.622504,
+            "latitude_size": 0.878654,
+            "longitude_size": 1.164423,
+            "zoom": 10,
+            "tzname": "Europe/Moscow",
+            "official_languages": "ru",
+            "widespread_languages": "ru",
+            "suggest_list": [],
+            "is_eu": false,
+            "services_names": [
+                "bs",
+                "yaca",
+                "weather",
+                "afisha",
+                "maps",
+                "tv",
+                "ad",
+                "etrain",
+                "subway",
+                "delivery",
+                "route"
+            ],
+            "seoname": "moscow",
+            "bounds": [
+                [
+                    37.0402925,
+                    55.31141404514547
+                ],
+                [
+                    38.2047155,
+                    56.190068045145466
+                ]
+            ],
+            "names": {
+                "ablative": "",
+                "accusative": "Москву",
+                "dative": "Москве",
+                "directional": "",
+                "genitive": "Москвы",
+                "instrumental": "Москвой",
+                "locative": "",
+                "nominative": "Москва",
+                "preposition": "в",
+                "prepositional": "Москве"
+            },
+            "parent": {
+                "id": 1,
+                "type": 5,
+                "parent_id": 3,
+                "capital_id": 213,
+                "geo_parent_id": 0,
+                "city_id": 213,
+                "name": "Москва и Московская область",
+                "native_name": "",
+                "iso_name": "RU-MOS",
+                "is_main": true,
+                "en_name": "Moscow and Moscow Oblast",
+                "short_en_name": "RU-MOS",
+                "phone_code": "495 496 498 499",
+                "phone_code_old": "",
+                "zip_code": "",
+                "population": 7503385,
+                "synonyms": "Московская область, Подмосковье, Podmoskovye",
+                "latitude": 55.815792,
+                "longitude": 37.380031,
+                "latitude_size": 2.705659,
+                "longitude_size": 5.060749,
+                "zoom": 8,
+                "tzname": "Europe/Moscow",
+                "official_languages": "ru",
+                "widespread_languages": "ru",
+                "suggest_list": [
+                    213,
+                    10716,
+                    10747,
+                    10758,
+                    20728,
+                    10740,
+                    10738,
+                    20523,
+                    10735,
+                    10734,
+                    10743,
+                    21622
+                ],
+                "is_eu": false,
+                "services_names": [
+                    "bs",
+                    "yaca",
+                    "ad"
+                ],
+                "seoname": "moscow-and-moscow-oblast",
+                "bounds": [
+                    [
+                        34.8496565,
+                        54.439456064325434
+                    ],
+                    [
+                        39.9104055,
+                        57.14511506432543
+                    ]
+                ],
+                "names": {
+                    "ablative": "",
+                    "accusative": "Москву и Московскую область",
+                    "dative": "Москве и Московской области",
+                    "directional": "",
+                    "genitive": "Москвы и Московской области",
+                    "instrumental": "Москвой и Московской областью",
+                    "locative": "",
+                    "nominative": "Москва и Московская область",
+                    "preposition": "в",
+                    "prepositional": "Москве и Московской области"
+                },
+                "parent": {
+                    "id": 225,
+                    "type": 3,
+                    "parent_id": 10001,
+                    "capital_id": 213,
+                    "geo_parent_id": 0,
+                    "city_id": 213,
+                    "name": "Россия",
+                    "native_name": "",
+                    "iso_name": "RU",
+                    "is_main": false,
+                    "en_name": "Russia",
+                    "short_en_name": "RU",
+                    "phone_code": "7",
+                    "phone_code_old": "",
+                    "zip_code": "",
+                    "population": 146880432,
+                    "synonyms": "Russian Federation,Российская Федерация",
+                    "latitude": 61.698653,
+                    "longitude": 99.505405,
+                    "latitude_size": 40.700127,
+                    "longitude_size": 171.643239,
+                    "zoom": 3,
+                    "tzname": "",
+                    "official_languages": "ru",
+                    "widespread_languages": "ru",
+                    "suggest_list": [
+                        213,
+                        2,
+                        65,
+                        54,
+                        47,
+                        43,
+                        66,
+                        51,
+                        56,
+                        172,
+                        39,
+                        62
+                    ],
+                    "is_eu": false,
+                    "services_names": [
+                        "bs",
+                        "yaca",
+                        "ad"
+                    ],
+                    "seoname": "russia",
+                    "bounds": [
+                        [
+                            13.683785499999999,
+                            35.290400699917846
+                        ],
+                        [
+                            -174.6729755,
+                            75.99052769991785
+                        ]
+                    ],
+                    "names": {
+                        "ablative": "",
+                        "accusative": "Россию",
+                        "dative": "России",
+                        "directional": "",
+                        "genitive": "России",
+                        "instrumental": "Россией",
+                        "locative": "",
+                        "nominative": "Россия",
+                        "preposition": "в",
+                        "prepositional": "России"
+                    }
+                }
+            }
+        },
+        "transports": [
+            {
+                "lineId": "2036925825",
+                "name": "С43",
+                "Types": [
+                    "bus"
+                ],
+                "type": "bus",
+                "threads": [
+                    {
+                        "threadId": "2036927717",
+                        "noBoarding": false,
+                        "EssentialStops": [
+                            {
+                                "id": "stop__9647342",
+                                "name": "Силикатный завод"
+                            },
+                            {
+                                "id": "stop__9647343",
+                                "name": "Силикатный завод"
+                            }
+                        ],
+                        "BriefSchedule": {
+                            "Events": [
+                                {
+                                    "Scheduled": {
+                                        "value": "1585163700",
+                                        "tzOffset": 10800,
+                                        "text": "22:15"
+                                    },
+                                    "Estimated": {
+                                        "value": "1585163863",
+                                        "tzOffset": 10800,
+                                        "text": "22:17"
+                                    },
+                                    "vehicleId": "codd%5Fnew|349061%5F151810"
+                                },
+                                {
+                                    "Scheduled": {
+                                        "value": "1585165500",
+                                        "tzOffset": 10800,
+                                        "text": "22:45"
+                                    }
+                                },
+                                {
+                                    "Scheduled": {
+                                        "value": "1585167300",
+                                        "tzOffset": 10800,
+                                        "text": "23:15"
+                                    }
+                                }
+                            ],
+                            "departureTime": "22:15"
+                        }
+                    }
+                ],
+                "uri": "ymapsbm1://transit/line?id=2036925825&ll=37.561545%2C55.761507&name=%D0%A143&r=3268&type=bus",
+                "seoname": "S43"
+            }
+        ],
+        "breadcrumbs": [
+            {
+                "name": "Карты",
+                "type": "root",
+                "url": "https://yandex.ru/maps/"
+            },
+            {
+                "name": "Москва",
+                "type": "region",
+                "url": "https://yandex.ru/maps/213/moscow/",
+                "region": {
+                    "center": [
+                        37.622504,
+                        55.753215
+                    ],
+                    "zoom": 10
+                }
+            },
+            {
+                "name": "Общественный транспорт",
+                "type": "masstransit-home",
+                "url": "https://yandex.ru/maps/213/moscow/transport/"
+            },
+            {
+                "name": "Парк Красная Пресня",
+                "type": "search",
+                "url": "https://yandex.ru/maps/213/moscow/stops/stop__10192834/",
+                "currentPage": true
+            }
+        ],
+        "searchResult": {
+            "type": "business",
+            "requestId": "1585163144993844-349471766-sas1-6139-sas-addrs-nmeta-new-8031",
+            "analyticsId": "1",
+            "title": "Парк Красная Пресня",
+            "description": "Россия, Москва, Краснопресненская набережная",
+            "address": "Россия, Москва, Краснопресненская набережная",
+            "coordinates": [
+                37.55332,
+                55.752005
+            ],
+            "displayCoordinates": [
+                37.55332,
+                55.752005
+            ],
+            "bounds": [
+                [
+                    37.5389735,
+                    55.74883337
+                ],
+                [
+                    37.5676665,
+                    55.75517637
+                ]
+            ],
+            "logId": "dHlwZT1iaXpmaW5kZXI7aWQ9OTE2ODU4MTEyMzg=",
+            "uri": "ymapsbm1://transit/stop?id=stop__10192834",
+            "id": "91685811238",
+            "metro": [
+                {
+                    "id": "station__9858806",
+                    "name": "Выставочная",
+                    "distance": "780 м",
+                    "distanceValue": 779.332,
+                    "coordinates": [
+                        37.54374933,
+                        55.748419092
+                    ],
+                    "type": "metro",
+                    "color": "#0099cc"
+                },
+                {
+                    "id": "station__9981061",
+                    "name": "Деловой центр",
+                    "distance": "1,2 км",
+                    "distanceValue": 1189.67,
+                    "coordinates": [
+                        37.538692665,
+                        55.74817449
+                    ],
+                    "type": "metro",
+                    "color": "#29b1a6"
+                },
+                {
+                    "id": "station__9858852",
+                    "name": "Международная",
+                    "distance": "1,4 км",
+                    "distanceValue": 1380.2,
+                    "coordinates": [
+                        37.535768957,
+                        55.747769672
+                    ],
+                    "type": "metro",
+                    "color": "#0099cc"
+                }
+            ],
+            "stops": [
+                {
+                    "id": "stop__10192834",
+                    "name": "Парк Красная Пресня",
+                    "distance": "0 м",
+                    "distanceValue": 0.0461493,
+                    "coordinates": [
+                        37.553319598,
+                        55.752004653
+                    ],
+                    "type": "common"
+                },
+                {
+                    "id": "stop__9646915",
+                    "name": "Мантулинская улица",
+                    "distance": "720 м",
+                    "distanceValue": 715.787,
+                    "coordinates": [
+                        37.552010271,
+                        55.756031351
+                    ],
+                    "type": "common"
+                },
+                {
+                    "id": "stop__10128289",
+                    "name": "Центр международной торговли",
+                    "distance": "740 м",
+                    "distanceValue": 740.68,
+                    "coordinates": [
+                        37.558359266,
+                        55.756201986
+                    ],
+                    "type": "common"
+                },
+                {
+                    "id": "stop__9642156",
+                    "name": "Улица Анны Северьяновой",
+                    "distance": "980 м",
+                    "distanceValue": 981.85,
+                    "coordinates": [
+                        37.554123066,
+                        55.758640816
+                    ],
+                    "type": "common"
+                },
+                {
+                    "id": "stop__9645511",
+                    "name": "Дорогомиловская Застава",
+                    "distance": "1,6 км",
+                    "distanceValue": 1581.9,
+                    "coordinates": [
+                        37.552970775,
+                        55.746859066
+                    ],
+                    "type": "common"
+                }
+            ],
+            "panorama": {
+                "id": "1297755959_673242413_23_1523279798",
+                "direction": [
+                    171.1,
+                    10
+                ],
+                "point": {
+                    "type": "Point",
+                    "coordinates": [
+                        37.5532958843,
+                        55.7520913497
+                    ]
+                },
+                "preview": "https://avatars.mds.yandex.net/get-altay/1627037/2a000001686d836b6b903762f1b895e73984/%s",
+                "staticPreview": "https://static-pano.maps.yandex.ru/v1/?panoid=1297755959_673242413_23_1523279798&size=500,240&azimuth=171.1&tilt=10&signature=4h0RJhAsFQGY-UxyPQmo4O4W3hyuA5vTVqh0jx0R7qI="
+            },
+            "shortTitle": "Парк Красная Пресня",
+            "fullAddress": "Россия, Москва, Краснопресненская набережная",
+            "status": "open",
+            "businessLinks": [],
+            "ratingData": {
+                "ratingCount": 0,
+                "ratingValue": 0,
+                "reviewCount": 0
+            },
+            "sources": [
+                {
+                    "id": "yandex",
+                    "name": "Яндекс",
+                    "href": "https://www.yandex.ru"
+                }
+            ],
+            "categories": [
+                {
+                    "name": "Остановка общественного транспорта",
+                    "class": "bus stop",
+                    "seoname": "public_transport_stop",
+                    "pluralName": "Остановки общественного транспорта"
+                }
+            ],
+            "businessProperties": {
+                "has_verified_owner": false,
+                "geoproduct_poi_color": "#ABAEB3",
+                "snippet_show_photo": "single_photo",
+                "snippet_show_subline": [
+                    "no_subline"
+                ],
+                "hide_claim_organization": true
+            },
+            "seoname": "park_krasnaya_presnya",
+            "geoId": 120538,
+            "references": [
+                {
+                    "id": "2036957792",
+                    "scope": "nyak"
+                }
+            ],
+            "region": {
+                "id": 213,
+                "hierarchy": [
+                    225,
+                    1,
+                    213
+                ],
+                "seoname": "moscow",
+                "bounds": [
+                    [
+                        37.0402925,
+                        55.31141404514547
+                    ],
+                    [
+                        38.2047155,
+                        56.190068045145466
+                    ]
+                ],
+                "names": {
+                    "ablative": "",
+                    "accusative": "Москву",
+                    "dative": "Москве",
+                    "directional": "",
+                    "genitive": "Москвы",
+                    "instrumental": "Москвой",
+                    "locative": "",
+                    "nominative": "Москва",
+                    "preposition": "в",
+                    "prepositional": "Москве"
+                },
+                "longitude": 37.622504,
+                "latitude": 55.753215,
+                "zoom": 10
+            },
+            "breadcrumbs": [
+                {
+                    "name": "Карты",
+                    "type": "root",
+                    "url": "https://yandex.ru/maps/"
+                },
+                {
+                    "name": "Москва",
+                    "type": "region",
+                    "url": "https://yandex.ru/maps/213/moscow/",
+                    "region": {
+                        "center": [
+                            37.622504,
+                            55.753215
+                        ],
+                        "zoom": 10
+                    }
+                },
+                {
+                    "type": "catalog",
+                    "name": "Каталог организаций",
+                    "url": "https://yandex.ru/maps/213/moscow/catalog/",
+                    "region": {
+                        "id": 213,
+                        "hierarchy": [
+                            225,
+                            1,
+                            213
+                        ],
+                        "seoname": "moscow",
+                        "bounds": [
+                            [
+                                37.0402925,
+                                55.31141404514547
+                            ],
+                            [
+                                38.2047155,
+                                56.190068045145466
+                            ]
+                        ],
+                        "names": {
+                            "ablative": "",
+                            "accusative": "Москву",
+                            "dative": "Москве",
+                            "directional": "",
+                            "genitive": "Москвы",
+                            "instrumental": "Москвой",
+                            "locative": "",
+                            "nominative": "Москва",
+                            "preposition": "в",
+                            "prepositional": "Москве"
+                        },
+                        "longitude": 37.622504,
+                        "latitude": 55.753215,
+                        "zoom": 10
+                    }
+                },
+                {
+                    "category": {
+                        "name": "Остановка общественного транспорта",
+                        "class": "bus stop",
+                        "seoname": "public_transport_stop",
+                        "pluralName": "Остановки общественного транспорта"
+                    },
+                    "name": "Остановки общественного транспорта",
+                    "type": "category",
+                    "url": "https://yandex.ru/maps/213/moscow/category/public_transport_stop/"
+                },
+                {
+                    "name": "Парк Красная Пресня",
+                    "type": "search",
+                    "url": "https://yandex.ru/maps/org/park_krasnaya_presnya/91685811238/",
+                    "currentPage": true
+                }
+            ],
+            "geoWhere": {
+                "id": "8063033",
+                "seoname": "krasnopresnenskaya_naberezhnaya",
+                "kind": "street",
+                "coordinates": [
+                    37.558796,
+                    55.753752
+                ],
+                "encodedCoordinates": "Z04YcwJoTkwBQFtvfXt0cntmZg=="
+            }
+        }
+    }
+}
