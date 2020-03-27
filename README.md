@@ -1,2 +1,2 @@
-Garmin ConnectIQ Widget for Yandex.Transport
+WIP: Garmin ConnectIQ Widget for Yandex.Transport
 
