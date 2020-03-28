@@ -5,6 +5,7 @@ import re
 from itertools import chain
 from itertools import islice
 import collections
+import datetime as dt
 
 YA_SCHED_API_KEY = "49128da9-ddca-428d-84e8-d75d72894965"
 YA_SCHED_NEAREST_URL = "https://api.rasp.yandex.net/v3.0/nearest_stations/"
@@ -40,43 +41,60 @@ def fetch_station_data(client, token, station_id):
 #       "uri": "ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3Dstop__10192834"
     }
     r = client.get(YA_TRANS_STATION_URL, params=params)
-    return json.loads(r.text)
+    return json.loads(r.text, encoding='utf-8')
+
+def calc_eta(time):
+    msk = dt.timezone(dt.timedelta(hours=3))
+    now = dt.datetime.now().astimezone(msk)
+
+    arrival_time = dt.datetime.strptime(time, "%H:%M").time()
+    hour = arrival_time.hour
+    minute = arrival_time.minute
+
+    arrival = now.replace(hour=hour, minute=minute)
+    if hour < now.hour:
+        arrival = arrival + dt.timedelta(days=1)
+
+    eta = arrival - now
+    minutes = int(eta.total_seconds() // 60)
+    return minutes
 
 def schedule_from_event(schedule, name, event):
     time = event.get('Estimated')
     mode = 'E'
     if not time:
-        print("No estimated time")
-
         # Fallback to scheduled
-        time = event['Scheduled']
+        time = event.get('Scheduled')
         mode = 'S'
         if not time:
-            print("And even no estimated time")
-            return None
+            print("And even no scheduled time")
+            return
+
+    eta = calc_eta(time['text'])
 
     schedule.append({
         "name": name,
         "mode": mode,
-        "time": time['text']
+        "eta": eta
     })
 
 def schedule_from_thread(schedule, name, thread):
     bs = thread.get('BriefSchedule')
     if not bs:
         print("No brief schedule")
-        return []
+        return
 
     ev = bs.get('Events')
     if not ev:
-        print("No events")
-        return []
-    print("Events ", len(ev))
+        print("No events " + name)
+        return
+
+    #print("Events ", len(ev))
     [schedule_from_event(schedule, name, x) for x in ev]
 
 def schedule_from_transport(schedule, transport):
     (name,) = transport['name'],
-    print("Threads ", len(transport['threads']))
+    #print("Threads ", len(transport['threads']))
     [schedule_from_thread(schedule, name, x) for x in transport['threads']]
 
 def extract_schedule(station_data):
@@ -84,15 +102,18 @@ def extract_schedule(station_data):
     transports = station_data['data']['transports']
     print("Transports ", len(transports))
     [schedule_from_transport(schedule, t) for t in transports]
-    print("SCHED ", schedule)
     return schedule
 
 def to_text(schedule):
-    return "\n".join(
-        take(MAX_DISPLAY_LINES, [
-            "{} - {}{}".format(x['name'], x['mode'], x['time'])
-            for x in schedule
-    ]))
+    if not schedule:
+        return "empty"
+
+    upcoming = take(MAX_DISPLAY_LINES, sorted(schedule, key=lambda x: x['eta']))
+
+    return "\n".join([
+        "{} - {}{}".format(x['name'], x['mode'], x['eta'])
+        for x in upcoming
+    ])
 
 def fetch_schedule(station_id):
     client = requests.session()
