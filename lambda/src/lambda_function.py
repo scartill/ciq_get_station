@@ -127,13 +127,14 @@ def respond_text(err, res=None):
         'body': 'AWS Error' if err else res,
         'headers': {
             'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'text/plain'
+            'Content-Type': 'text/plain;charset=UTF-8'
         }
     }
     
 def lambda_handler(event, context):
     try:
-        schedule = fetch_schedule("stop__9649375")
+        params = event['queryStringParameters']
+        schedule = fetch_schedule(params['station_id'])
         return respond_text(None, schedule)
     except Exception as err:
         traceback.print_exc()
