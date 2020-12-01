@@ -6,6 +6,7 @@ from itertools import chain
 from itertools import islice
 import collections
 import datetime as dt
+import traceback
 
 YA_SCHED_API_KEY = "49128da9-ddca-428d-84e8-d75d72894965"
 YA_SCHED_NEAREST_URL = "https://api.rasp.yandex.net/v3.0/nearest_stations/"
@@ -41,6 +42,7 @@ def fetch_station_data(client, token, station_id):
 #       "uri": "ymapsbm1%3A%2F%2Ftransit%2Fstop%3Fid%3Dstop__10192834"
     }
     r = client.get(YA_TRANS_STATION_URL, params=params)
+    print(f'Ya returned {r.text}')
     return json.loads(r.text, encoding='utf-8')
 
 def calc_eta(time):
@@ -133,7 +135,14 @@ def respond_text(err, res=None):
     
 def lambda_handler(event, context):
     try:
+        if 'queryStringParameters' not in event:
+            return respond_text(None, "Please provide the station ID")
+
         params = event['queryStringParameters']
+
+        if 'station_id' not in params:
+            return respond_text(None, "Please provide the station ID")
+
         schedule = fetch_schedule(params['station_id'])
         return respond_text(None, schedule)
     except Exception as err:
